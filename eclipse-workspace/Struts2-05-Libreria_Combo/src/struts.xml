@@ -1,0 +1,46 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+    
+    
+    
+<struts>
+
+	<constant name="struts.mapper.action.prefix.enabled" value="true"/> <!-- Esta etiqueta se pone por los 'actions' en "modifica.libro" -->
+	
+	
+	<package name="com.Alfonso20180629.action" extends="struts-default">
+	
+		<!-- ALTA -->
+		<action name="alta" class="com.Alfonso20180629.LibroAction" method="alta">
+			<result>/index.jsp</result>
+		</action>
+		
+		<!-- CONSULTA -->
+		<action name="consulta" class="com.Alfonso20180629.LibroAction" method="consulta">
+			<result>/consulta.jsp</result>
+		</action>
+		
+		<!-- CONSULTA 1 LIBRO -->
+		<action name="consultaLibro" class="com.Alfonso20180629.LibroAction" method="muestraLibro">
+			<result>/modifica-libro.jsp</result>
+		</action>
+		
+		<!-- MODIFICACIÓN -->
+		<action name="modificacion" class="com.Alfonso20180629.LibroAction" method="modificacion">
+			<result>/modifica-libro.jsp</result>
+		</action>
+		
+		<!-- BAJA -->
+		<action name="baja" class="com.Alfonso20180629.LibroAction" method="baja">
+			<result>/index.jsp</result>
+		</action>
+		
+		<!-- COMBO -->
+		<action name="carga-combo" class="com.Alfonso20180629.LibroAction" method="consulta">
+			<result>/menu-magico.jsp</result>
+		</action>
+		
+	</package>	
+	
+</struts>

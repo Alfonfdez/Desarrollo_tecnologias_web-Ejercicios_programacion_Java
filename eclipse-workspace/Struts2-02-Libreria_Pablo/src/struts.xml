@@ -1,0 +1,33 @@
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<constant name="struts.mapper.action.prefix.enabled" value="true"/>
+	
+	<package name="com.Alfonso20180627.action" extends="struts-default">
+	
+		<action name="alta" class="com.Alfonso20180627.actions.LibroAction" method="alta">
+			<result>/index.jsp</result>
+		</action>
+		
+		<action name="consulta" class="com.Alfonso20180627.actions.LibroAction" method="consulta">
+			<result>/consulta.jsp</result>
+		</action>
+		
+		<action name="modificacion1" class="com.Alfonso20180627.actions.LibroAction" method="inicioModificacionLibro">
+			<result>/modificacion.jsp</result>
+		</action>
+		
+		<action name="modificar" class="com.Alfonso20180627.actions.LibroAction" method="modificaomuere">
+			<result>/index.jsp</result>
+		</action>
+		
+		<action name="borrar" class="com.Alfonso20180627.actions.LibroAction" method="borraRecorcholis">
+			<result>/index.jsp</result>
+		</action>
+		
+	</package>
+	
+</struts>

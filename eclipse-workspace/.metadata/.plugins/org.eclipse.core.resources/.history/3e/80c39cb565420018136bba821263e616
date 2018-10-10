@@ -1,0 +1,30 @@
+package com.Alfonso20180417_Ejercicios_rapidos;
+
+public class VariableStatic {
+	
+	static int variableEstatica = 0;
+	int variableNoEstatica = 0;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		VariableStatic.variableEstatica++;
+		VariableStatic.variableEstatica++;
+
+		//Incrementamos la variable no estática
+		VariableStatic  variableStatic_1 = new VariableStatic();
+		VariableStatic  variableStatic_2 = new VariableStatic();
+
+		variableStatic_1.variableNoEstatica++;
+		variableStatic_2.variableNoEstatica++;
+
+		//Mostramos resultados
+		
+		System.out.println(VariableStatic.variableEstatica);
+		System.out.println(variableStatic_1.variableNoEstatica);
+		System.out.println(variableStatic_2.variableNoEstatica);
+		
+
+	}
+
+}

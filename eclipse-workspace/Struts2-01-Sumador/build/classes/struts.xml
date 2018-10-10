@@ -1,0 +1,15 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+    
+    
+    
+<struts>
+	<package name="com.Alfonso20180621.action" extends="struts-default">
+	
+		<action name="Sumador" class="com.Alfonso20180621.SumadorAction" method="sumar">
+			<result>/pagina2.jsp</result>
+		</action>
+		
+	</package>
+</struts>

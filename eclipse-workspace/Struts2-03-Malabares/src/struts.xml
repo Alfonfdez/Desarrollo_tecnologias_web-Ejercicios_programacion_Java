@@ -1,0 +1,38 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+    
+<struts>
+
+	<constant name="struts.mapper.action.prefix.enabled" value="true"/> <!-- Esta etiqueta se pone por los 'actions' en "modifica.malabar" -->
+	
+	<package name="com.Alfonso20180628.action" extends="struts-default">
+	
+		<!-- ALTA -->
+		<action name="alta" class="com.Alfonso20180628.MalabarAction" method="alta">
+			<result>/index.jsp</result>
+		</action>
+		
+		<!-- CONSULTA -->
+		<action name="consulta" class="com.Alfonso20180628.MalabarAction" method="consulta">
+			<result>/consulta.jsp</result>
+		</action>
+		
+		<!-- CONSULTA 1 MALABAR -->
+		<action name="consultaMalabar" class="com.Alfonso20180628.MalabarAction" method="muestraMalabar">
+			<result>/modificacion.jsp</result>
+		</action>
+		
+		<!-- MODIFICACIÓN -->
+		<action name="modificacion" class="com.Alfonso20180628.MalabarAction" method="modificacion">
+			<result>/modificacion.jsp</result>
+		</action>
+		
+		<!-- BAJA -->
+		<action name="baja" class="com.Alfonso20180628.MalabarAction" method="baja">
+			<result>/consulta.jsp</result>
+		</action>
+		
+	</package>
+	
+</struts>

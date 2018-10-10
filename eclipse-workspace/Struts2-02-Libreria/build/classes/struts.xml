@@ -1,0 +1,55 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+    
+    
+    
+<struts>
+
+	<constant name="struts.mapper.action.prefix.enabled" value="true"/> <!-- Esta etiqueta se pone por los 'actions' en "modifica.libro" -->
+	
+	
+	<package name="com.Alfonso20180627.action" extends="struts-default">
+	
+		<!-- ALTA -->
+		<action name="alta" class="com.Alfonso20180627.LibroAction" method="alta">
+			<result>/index.jsp</result>
+		</action>
+		
+		<!-- CONSULTA -->
+		<action name="consulta" class="com.Alfonso20180627.LibroAction" method="consulta">
+			<result>/consulta.jsp</result>
+		</action>
+		
+		<!-- CONSULTA 1 LIBRO -->
+		<action name="consultaLibro" class="com.Alfonso20180627.LibroAction" method="muestraLibro">
+			<result>/modifica-libro.jsp</result>
+		</action>
+		
+		<!-- MODIFICACIÓN -->
+		<action name="modificacion" class="com.Alfonso20180627.LibroAction" method="modificacion">
+			<result>/modifica-libro.jsp</result>
+		</action>
+		
+		<!-- BAJA -->
+		<action name="baja" class="com.Alfonso20180627.LibroAction" method="baja">
+			<result>/index.jsp</result>
+		</action>
+		
+	</package>
+	
+	
+	<!--  SI VINIERAMOS DE LAS <a href=""> CON ETIQUESTAS DE STRUTS 2 -->
+	
+	<!--
+	
+	<package name="com.Alfonso20180627.action" extends="struts-default">
+	
+		<action name="alta" class="com.Alfonso20180627.LibroAction" method="execute">
+			<result name="success">/alta.jsp</result>
+		</action>
+		
+	</package> -->
+	
+	
+</struts>

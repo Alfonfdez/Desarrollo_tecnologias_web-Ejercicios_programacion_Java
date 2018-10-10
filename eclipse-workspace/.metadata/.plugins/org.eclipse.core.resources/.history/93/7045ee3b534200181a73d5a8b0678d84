@@ -1,0 +1,35 @@
+package com.Alfonso20180417_Ejercicios_rapidos;
+
+import java.util.Scanner;
+
+public class Ejercicio08 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner lector = new Scanner(System.in);
+		
+		System.out.println("Escriba el largo");
+		int x = lector.nextInt();
+		
+		System.out.println("Escriba el ancho");
+		int y = lector.nextInt();
+		
+		System.out.println("Escriba el alto");
+		int z = lector.nextInt();	
+		
+		Ejercicio08 ejercicio08 = new Ejercicio08();
+		int a = ejercicio08.solucion(x,y,z);
+		
+		System.out.println(a);
+		
+
+	}
+	
+	public int solucion(int x, int y, int z) {
+		
+		return x*y*z;
+		
+	}
+
+}

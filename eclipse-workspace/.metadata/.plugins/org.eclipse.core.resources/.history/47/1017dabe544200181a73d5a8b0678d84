@@ -1,0 +1,20 @@
+package com.Alfonso20180417_Ejercicios_rapidos;
+
+import java.util.Scanner;
+
+public class Ejercicio16 {
+
+	public static void main(String[] args) {
+		
+		Scanner lector = new Scanner(System.in);
+		int x = lector.nextInt();
+		
+		for(int i=0; i<x; i=i+1) {
+			if(x%3==0) {
+				System.out.println(i);
+			} else ;
+		}
+		
+	}
+
+}

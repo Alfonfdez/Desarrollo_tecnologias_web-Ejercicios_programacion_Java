@@ -1,0 +1,10 @@
+INDEX VERSION 1.4+C:\Users\ALFON\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+653787199.index
+404322524.index
+1692684.index
+416718901.index
+3217536108.index
+962618862.index
+2155181291.index
+2280149577.index
+4011589460.index
